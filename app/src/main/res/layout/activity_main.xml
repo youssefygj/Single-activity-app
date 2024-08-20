@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:alpha="0.2"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:id="@+id/id_google"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_details"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_details"/>
+
+    <TextView
+        android:drawablePadding="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:drawableStart="@drawable/city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_details"
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_address"/>
+
+    <TextView
+        android:drawablePadding="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:drawableStart="@drawable/kwkb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_com"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
